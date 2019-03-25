@@ -43,7 +43,7 @@ name: 목차
 - Docker란 컨테이너를 실행시키는 런타임을 말합니다.
 - 컨테이너란 특정 소프트웨어와 그 소프트웨어의 종속성을 한 데 모아둔 일종의 표준 단위입니다.
 - 소프트웨어를 컨테이너로 관리하게 되면, 배포 시스템에 따라 실행 환경이 달라지는 문제점(Works on my machine 문제)를 해결할 수 있습니다.
-
+.center[![Docker logo](https://www.docker.com/sites/default/files/social/docker_facebook_share.png)]
 ???
 예) 노드JS로 짜여진 웹 서버를 돌리기 위해서는 Node.js 런타임, 데이터베이스 등이 필요한데, 이러한 종속성을 하나의 큰 실행 단위 안으로 밀어넣은 것이 컨테이너임
 ---
@@ -116,6 +116,34 @@ sudo apt-get update
 sudo apt-get -y install docker-ce
 ```
 - Windows, MacOS의 경우 https://www.docker.com/get-started 참고
+
+---
+# Docker 실행 결과
+```bash
+frank@frank-P34V5:~$ docker run hello-world
+
+Hello from Docker!
+This message shows that your installation appears to be working correctly.
+
+To generate this message, Docker took the following steps:
+ 1. The Docker client contacted the Docker daemon.
+ 2. The Docker daemon pulled the "hello-world" image from the Docker Hub.
+    (amd64)
+ 3. The Docker daemon created a new container from that image which runs the
+    executable that produces the output you are currently reading.
+ 4. The Docker daemon streamed that output to the Docker client, which sent it
+    to your terminal.
+
+To try something more ambitious, you can run an Ubuntu container with:
+ $ docker run -it ubuntu bash
+
+Share images, automate workflows, and more with a free Docker ID:
+ https://hub.docker.com/
+
+For more examples and ideas, visit:
+ https://docs.docker.com/get-started/
+
+frank@frank-P34V5:~$ ```
     </textarea>
     <script src="https://remarkjs.com/downloads/remark-latest.min.js">
     </script>
